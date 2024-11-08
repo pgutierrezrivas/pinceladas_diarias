@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function (event) {
 
     // url de la api de art institute of chicago con imagenes de dominio publico
-    const apiUrl = 'https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&limit=0';
+    const apiUrl = 'https://api.artic.edu/api/v1/artworks';
 
     // funcion para obtener la obra de arte para hoy
     async function fetchArtworkForToday() {
