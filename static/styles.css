@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    font-family: "Crimson Text", serif;
+}
+
+body {
+    background-color: #E2F9E9 !important;
+}
+
+header {
+    border-bottom: 3px solid #113728 ;
+    color: #333;
+}
+
+.description {
+    background-color: #113728;
+    color: white;
+    font-size: 17px;
+}
+
+#art-image {
+    max-height: 800px;
+    width: 100%;
+}
+
+#art-autor {
+    background-color: #E8D1F2;
+    color: #113728;
+    padding: 6px 10px;
+    margin: 0 16%;
+    font-weight: 600;
+}
+
+.artwork {
+    margin-bottom: 30px;
+}
+
+/*.circle {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 1500px;
+    height: 1500px;
+    background-color: #A8E6BD;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}*/
