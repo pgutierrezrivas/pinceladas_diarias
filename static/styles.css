@@ -20,7 +20,7 @@ header {
 }
 
 #art-image {
-    max-height: 800px;
+    max-height: 700px;
     width: 100%;
 }
 
@@ -35,15 +35,3 @@ header {
 .artwork {
     margin-bottom: 30px;
 }
-
-/*.circle {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 1500px;
-    height: 1500px;
-    background-color: #A8E6BD;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}*/
