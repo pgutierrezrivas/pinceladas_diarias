@@ -17,6 +17,7 @@ header {
     background-color: #113728;
     color: white;
     font-size: 17px;
+    margin-bottom: 12px;
 }
 
 #art-image {
@@ -24,12 +25,17 @@ header {
     width: 100%;
 }
 
-#art-autor {
+#art-artist {
     background-color: #E8D1F2;
     color: #113728;
     padding: 6px 10px;
-    margin: 0 14%;
+    margin: 12px 14%;
     font-weight: 600;
+    margin-top: 20px;
+}
+
+#art-date {
+    margin: 10px 0;
 }
 
 .artwork {
@@ -39,4 +45,8 @@ header {
 .img-base {
     width: 300px;
     margin-bottom: 18px;
+}
+
+.link {
+    color: #113728;
 }
