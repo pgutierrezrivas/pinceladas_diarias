@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
                 const data = await response.json();
                 // filtro solo las obras de estilo 'Impressionism'
-                const artwork = data.data.find(item => (item.style_id === "TM-7543" || item.style_id === "TM-7547") && item.classification_id === "TM-9");
+                const artwork = data.data.find(item => item.classification_id === "TM-9");
 
                 if (artwork) {
                     // guardo la obra de arte obtenida en localStorage
