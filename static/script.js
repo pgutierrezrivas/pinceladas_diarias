@@ -2,14 +2,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     // url de la api de art institute of chicago con imagenes de dominio publico
     const apiUrl = 'https://api.artic.edu/api/v1/artworks';
+    // obtengo la fecha actual y calculo el dia del año
+    const today = new Date();
+    const dayOfYear = getDayOfYear(today);
 
     // funcion para obtener la obra de arte para hoy
     async function fetchArtworkForToday() {
         try {
-            // obtengo la fecha actual y calcular el dia del año
-            const today = new Date();
-            const dayOfYear = getDayOfYear(today);
-
             // verifico si ya tenemos una obra guardada en localStorage
             const storedArtwork = localStorage.getItem('artwork_' + dayOfYear);
             if (storedArtwork) {
@@ -53,6 +52,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
         const autor = document.getElementById('art-autor');
         autor.textContent = `Autor ${artwork.artist_title || 'No disponible'}`;
+
+        const dayArt = document.getElementById('day-art');
+        dayArt.textContent = `Día ${dayOfYear} del año ${today.getFullYear()}`;
     }
 
     // cargo la obra de arte cuando la pagina cargue
