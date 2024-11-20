@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function (event) {
     // url de la api de art institute of chicago con imagenes de dominio publico
-    const apiUrl = 'https://api.artic.edu/api/v1/artworks?limit=100&page=1&fields=id,title,style_id,classification_id,image_id,date_display,artist_title';
+    const apiUrl = 'https://api.artic.edu/api/v1/artworks?limit=100&page=2&fields=id,title,style_id,classification_id,image_id,date_display,artist_title';
     // obtengo la fecha actual y calculo el dia del año
     const today = new Date();
     const dayOfYear = getDayOfYear(today);
