@@ -13,19 +13,33 @@ header {
     color: #333;
 }
 
+.artwork {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 700px;
+}
+
+.img-day {
+    width: 100%;
+    text-align: center;
+}
+.img-day img {
+    max-width: 100%; 
+    height: auto;
+}
+
 .description {
     background-color: #113728;
     color: white;
     font-size: 17px;
     margin-bottom: 12px;
-}
-
-#art-image {
-    max-height: 700px;
+    padding: 16px;
     width: 100%;
 }
 
-#art-artist {
+#art-date {
     background-color: #E8D1F2;
     color: #113728;
     padding: 6px 10px;
@@ -34,12 +48,8 @@ header {
     margin-top: 20px;
 }
 
-#art-date {
+#art-artist {
     margin: 10px 0;
-}
-
-.artwork {
-    margin-bottom: 30px;
 }
 
 .img-base {
